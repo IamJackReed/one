@@ -1,1 +1,187 @@
-<link rel="stylesheet" href="{{ '/assets/css/exploding-nav.css' | prepend: site.baseurl }}">
+
+<style>
+  /* ============================================
+     GLOBAL FONT — SEGOE UI
+     ============================================ */
+  html,
+  body,
+  input,
+  select,
+  textarea,
+  button {
+    font-family: "Segoe UI", SegoeUI, -apple-system, BlinkMacSystemFont,
+                 "Helvetica Neue", Arial, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+  }
+
+  /* ============================================
+     MOODY FINANCE-PRO THEME
+     ============================================ */
+
+  /* Page background */
+  body {
+    background-color: #1f1f1f;
+    color: #d5d5d5;
+  }
+
+  /* Post container “cards” */
+  .post, article, .post-content {
+    background-color: #262626;
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: #d5d5d5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .post:hover,
+  article:hover,
+  .post-content:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    background-color: #2d2d2d;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+
+  /* Metadata */
+  .post-meta,
+  .post-date,
+  .tags,
+  .categories,
+  .author-info {
+    color: #9a9a9a !important;
+  }
+
+  /* Links */
+  a {
+    color: #6fbce8;
+  }
+  a:hover {
+    color: #9ed3f3;
+  }
+
+  /* ============================================
+     DARK HEADER / SIDEBAR / FOOTER
+     ============================================ */
+
+  /* Header */
+  .bar-header {
+    background-color: #181818;
+    border-bottom: 1px solid #333333;
+    color: #e5e5e5;
+  }
+
+  .bar-header .logo a {
+    color: #f5f5f5;
+    text-decoration: none;
+  }
+  .bar-header .logo a:hover {
+    color: #ffffff;
+  }
+
+  #menu svg,
+  .bar-header svg {
+    fill: currentColor;
+  }
+
+  /* Sidebar menu */
+  .sidebar {
+    background-color: #181818;
+    border-left: 1px solid #333333;
+  }
+
+  #navigation h2 {
+    color: #350436;
+  }
+
+  #navigation a {
+    color: #d5d5d5;
+  }
+  #navigation a:hover {
+    color: #6fbce8;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #181818;
+    border-top: 1px solid #333333;
+    color: #9a9a9a;
+    padding: 1.5rem 0;
+  }
+
+  footer a {
+    color: #d5d5d5;
+  }
+  footer a:hover {
+    color: #6fbce8;
+  }
+  footer svg {
+    fill: currentColor;
+  }
+
+  /* ============================================
+     READABILITY POLISH
+     ============================================ */
+
+  /* Paragraphs */
+  .post-content p,
+  .post p,
+  article p,
+  .content p {
+    color: #e8e8e8 !important;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  /* Lists */
+  .post-content li,
+  article li {
+    color: #e8e8e8 !important;
+    line-height: 1.4;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    color: #f0f0f0 !important;
+    border-left: 4px solid #6fbce8;
+    padding-left: 1.2rem;
+    margin-left: 0;
+    opacity: 0.95;
+  }
+
+  /* Code blocks */
+  pre, code {
+    background: #333333 !important;
+    color: #f3f3f3 !important;
+    border-radius: 6px;
+    padding: 0.2rem 0.2rem;
+    font-size: 0.875rem;
+  }
+
+  /* Images on dark backgrounds */
+  .post-content img,
+  article img {
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+  }
+
+  /* Strong text */
+  strong, b {
+    color: #ffffff;
+  }
+
+  /* Horizontal rule */
+  hr {
+    border-color: #3a3a3a;
+    margin: 2.5rem 0;
+  }
+</style>

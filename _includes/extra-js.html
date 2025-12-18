@@ -1,1 +1,16 @@
-<script src="{{ '/assets/js/exploding-nav.js' | prepend: site.baseurl }}"></script>
+<!-- Disclaimer gate (must run BEFORE theme JS) -->
+<script
+  src="{{ site.baseurl }}/assets/js/disclaimer-gate.js"
+  data-baseurl="{{ site.baseurl }}"
+  data-disclaimer-path="/disclaimer/"
+  data-storage-key="reedDisclaimerAccepted"
+></script>
+
+<!-- Safety net for home cards -->
+<script src="{{ site.baseurl }}/assets/js/home-cards-fallback.js"></script>
+
+<!-- Exploding head nav -->
+<script src="{{ site.baseurl }}/assets/js/exploding-nav.js"></script>
+
+<!-- Netlify Identity -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
