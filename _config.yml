@@ -1,24 +1,30 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+nname: Jack Reed
+title: Jack Reed | Scrum Master
+description: Jackflix is a template for Jekyll inspired by Netflix.
+
 tags:
   - blog
   - template
   - jekyll
   - theme
   - netlify
+
 show_hero: true
 menu:
   - title: Home
     url: /
   - title: About
     url: /about
-  - title: Contact
-    url: /contact
-  - title: Feed
-    url: /feed.xml
+  - title: Posts
+    url: /posts/
+  - title: People & Teams
+    url: /People&Teams
+  - title: Product
+    url: /Product
+  - title: Organisation & Change
+    url: /Organisation&Change
+
 email: youremail@test.com
 # See: https://disqus.com/
 disqus_username: disqus_username
@@ -45,8 +51,8 @@ two_columns_layout: true
 
 
 # Advanced Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "/one" # the subpath of your site, e.g. /blog
+url: "https://iamjackreed.github.io" # the main domain
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
 categories_folder: category
@@ -109,5 +115,4 @@ exclude: [
   'README.md'
 ]
 
-# Theme
-version: v3.1.2
+
