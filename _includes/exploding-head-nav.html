@@ -1,0 +1,25 @@
+{%- comment -%}
+Exploding head nav (ported from /cv6). Self-contained.
+{%- endcomment -%}
+
+<div class="exploding-nav first-run" style="--navCount: 3" data-exploding-nav>
+  <button class="exploding-nav-button" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="exploding-nav-panel">
+    <img class="face" src="{{ '/assets/img/exploding-nav/jason-brains.png' | prepend: site.baseurl }}" alt="Menu" />
+    <span class="sr-only">Show Navigation</span>
+  </button>
+
+  <nav id="exploding-nav-panel" class="home-page-nav" aria-label="Quick links">
+    <a class="home-item" href="{{ site.baseurl }}/" style="--offset: 1">
+      Home
+      <img src="{{ '/assets/img/exploding-nav/camera.png' | prepend: site.baseurl }}" alt="" aria-hidden="true">
+    </a>
+    <a class="home-item" href="{{ site.baseurl }}/about/" style="--offset: 2">
+      About
+      <img src="{{ '/assets/img/exploding-nav/terminal.png' | prepend: site.baseurl }}" alt="" aria-hidden="true">
+    </a>
+    <a class="home-item" href="{{ site.baseurl }}/contact/" style="--offset: 3">
+      Contact
+      <img src="{{ '/assets/img/exploding-nav/newsletter.png' | prepend: site.baseurl }}" alt="" aria-hidden="true">
+    </a>
+  </nav>
+</div>
